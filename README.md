@@ -1,2 +1,1 @@
-# Notes-taker
-Note Taker that can be used to write and save notes from the
+# Note Taker Starter Code
