@@ -29,5 +29,8 @@ if (title && text){
 }
 
 });
+notes.delete('/:id', (req, res)=>{
+  
+})
 
 module.exports = notes;
