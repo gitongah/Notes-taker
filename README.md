@@ -7,7 +7,8 @@
   <img width="1440" alt="image" src="https://github.com/gitongah/Notes-taker/assets/39062444/52d5dfc1-15c7-4763-b3c5-77eade67e7a2">
   <img width="1440" alt="image" src="https://github.com/gitongah/Notes-taker/assets/39062444/6486141d-af85-46b4-9303-0728dc7b7c41">
 
-
+  ### link to the live link
+  https://notes-taker-2oa4.onrender.com
   ### Table of Contents 📖
   - [Usage](#usage-🎮)
   ## Usage 🎮
