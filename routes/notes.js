@@ -1,5 +1,5 @@
 const notes = require('express').Router();
-const { readFromFile, readAndAppend } = require('../helper/fsUtils');
+const { readFromFile, readAndAppend, deleteItem } = require('../helper/fsUtils');
 const uuid = require('../helper/uuid');
 
 //Get route for reciving all the notes
@@ -30,7 +30,8 @@ if (title && text){
 
 });
 notes.delete('/:id', (req, res)=>{
-  
+  console.info(`${req.method} request recived to delete a note`);
+  deleteItem(req.params.id);
 })
 
 module.exports = notes;

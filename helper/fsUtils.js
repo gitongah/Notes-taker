@@ -13,16 +13,32 @@ const writeToFile = (destination, content) =>{
 }
 
 const readAndAppend = (content, file) =>{
-  fs.readFile(file, 'utf8', (error, data) => {
+  fs.readFile(file, 'utf8', (error, note) => {
     if(error){
       console.error(error);
     }else{
-      const parseData = JSON.parse(data);
+      const parseData = JSON.parse(note);
       parseData.push(content);
       writeToFile(file, parseData);
     }
   });
 };
 
-module.exports = { readFromFile, writeToFile, readAndAppend}
+
+
+const deleteItem = (id)=>{
+  fs.readFile(file, 'utf8', (error, note) => {
+    if(error){
+      console.error(error);
+    }else{
+      const parseData = JSON.parse(note);
+      parseData.filter((note)=> note.id !== id).then((filteredNotes) => writeToFile(file, filteredNotes));
+    }
+  });
+
+}
+
+//write the api for delete
+
+module.exports = { readFromFile, writeToFile, readAndAppend, deleteItem}
 
