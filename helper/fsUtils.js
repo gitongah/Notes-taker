@@ -26,13 +26,14 @@ const readAndAppend = (content, file) =>{
 
 
 
-const deleteItem = (id)=>{
+const deleteItem = (id, file)=>{
   fs.readFile(file, 'utf8', (error, note) => {
     if(error){
       console.error(error);
     }else{
       const parseData = JSON.parse(note);
-      parseData.filter((note)=> note.id !== id).then((filteredNotes) => writeToFile(file, filteredNotes));
+      filteredNotes = parseData.filter((note)=> note.id !== id)
+      writeToFile(file, filteredNotes);
     }
   });
 

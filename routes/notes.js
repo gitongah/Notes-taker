@@ -31,7 +31,8 @@ if (title && text){
 });
 notes.delete('/:id', (req, res)=>{
   console.info(`${req.method} request recived to delete a note`);
-  deleteItem(req.params.id);
+  deleteItem(req.params.id, './db/db.json');
+  res.sendStatus(204)
 })
 
 module.exports = notes;
