@@ -3,6 +3,11 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Description 🔎
   This is a small ToDo application where the user can be able write down what they plan to do for the day. Once they have completed a task the user can delete the Done Todo from the list and focus on the remaining items in the list.
+  ## Screenshot 
+  <img width="1440" alt="image" src="https://github.com/gitongah/Notes-taker/assets/39062444/52d5dfc1-15c7-4763-b3c5-77eade67e7a2">
+  <img width="1440" alt="image" src="https://github.com/gitongah/Notes-taker/assets/39062444/6486141d-af85-46b4-9303-0728dc7b7c41">
+
+
   ### Table of Contents 📖
   - [Usage](#usage-🎮)
   ## Usage 🎮
